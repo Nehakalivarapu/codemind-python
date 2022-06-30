@@ -13,4 +13,4 @@ while n>5:
 if c==1 or n<=0:
     print('Not Ugly Number')
 else:
-    print('Ugly Number')
+    print("Ugly Number")
