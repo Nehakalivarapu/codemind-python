@@ -1,8 +1,6 @@
 a,b=map(int,input().split())
-gcd=0
-i=1
-while i<=a and i<=b:
+k=a*b
+for i in range(a,0,-1):
     if a%i==0 and b%i==0:
-        gcd=i
-    i+=1
-print(gcd)
+        print(i)
+        break
