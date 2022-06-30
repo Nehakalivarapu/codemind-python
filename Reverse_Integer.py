@@ -1,10 +1,10 @@
 n=int(input())
-rev=0
 t=n
+rev=0
 k=0
-if(n<0):
+if n<0:
     n=n+(n*(-2))
-while (n!=0):
+while(n!=0):
     d=n%10
     rev=rev*10+d
     n=n//10
