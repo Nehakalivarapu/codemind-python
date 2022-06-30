@@ -2,8 +2,8 @@ a=int(input())
 c=0
 r=0
 j=0
-p=a
 k=a**2
+p=a
 t=a
 rev=0
 while a:
@@ -21,6 +21,6 @@ while rev:
     r=r*10+d
     rev=rev//10
 if r==p:
-    print("Automorphic Number")
+    print('Automorphic Number')
 else:
-    print("Not an Automorphic Number")
+    print('Not an Automorphic Number')
