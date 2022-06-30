@@ -1,18 +1,18 @@
-x=int(input())
+a=int(input())
 c=0
-p=0
-temp=x
-s=temp
-while(x):
-    d=x%10
-    x=x//10
+t=a
+p=a
+k=0
+while a:
+    d=a%10
     c+=1
-while(temp):
-    d=temp%10
-    temp=temp//10
-    p=p+pow(d,c)
+    a=a//10
+while t:
+    d=t%10
+    k=k+d**c
     c-=1
-if(s==p):
-    print("True")
+    t=t//10
+if p==k:
+    print('True')
 else:
-    print("False")
+    print('False')
