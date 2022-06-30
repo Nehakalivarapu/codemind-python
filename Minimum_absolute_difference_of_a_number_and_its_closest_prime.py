@@ -1,19 +1,17 @@
-def prime(n):
-    for i in range(2,n):
-        if n%i==0:
-            return False
+k=int(input())
+for i in range(k,2,-1):
+    for j in range(2,i):
+        if i%j==0:
+            break
     else:
-        return True
-a=int(input())
-for j in range(a,2,-1):
-    if prime(j):
-        n=j
         break
-for p in range(a,a+100):
-    if prime(p):
-        m=p
+for m in range(k+1,k+100):
+    for n in range(2,m):
+        if m%n==0:
+            break
+    else:
         break
-if abs(n-a)<=abs(m-a):
-    print(abs(n-a))
+if abs(k-m)>=abs(k-i):
+    print(abs(k-i))
 else:
-    print(abs(m-a))
+    print(abs(k-m))
