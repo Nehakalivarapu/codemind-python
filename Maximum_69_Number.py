@@ -1,16 +1,15 @@
-a=int(input())
-k=a
-b=[]
-while k:
-    d=k%10
-    b.append(d)
-    k//=10
-b=b[::-1]
-for i in range(len(b)):
-    if b[i]==6:
-        b[i]=9
+n=int(input())
+a=[]
+while n:
+    d=n%10
+    a.append(d)
+    n=n//10
+a=a[::-1]
+for i in range(len(a)):
+    if a[i]==6:
+        a[i]=9
         break
 r=0
-for i in range(len(b)):
-    r=r*10+b[i]
+for i in range(len(a)):
+    r=r*10+a[i]
 print(r)
