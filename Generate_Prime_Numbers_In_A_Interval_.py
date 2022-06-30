@@ -1,14 +1,14 @@
-def prime(n):
-    for i in range(2,n):
-        if n%i==0:
-            return 0
+a=int(input())
+b=int(input())
+if a<9:
+    print(2)
+    print(3)
+    print(5)
+    print(7)
+    a=10
+for i in range(a,b+1):
+    for j in range(2,a):
+        if i%j==0:
+            break
     else:
-        return 1
-n=int(input())
-m=int(input())
-for i in range(n,m+1):
-    if(i==1):
-        continue
-    if prime(i):
-        print(i,end='
-')
+        print(i)
