@@ -1,13 +1,9 @@
 n=int(input())
-temp=0
-r=0
-sum=0
-t=0
-temp=n
-for i in range(1,n):
+k=0
+for i in range(1,(n//2)+1):
     if n%i==0:
-        sum=sum+i
-if sum>n:
-    print("True")
+        k=k+i
+if k>n:
+    print('True')
 else:
-    print("False")
+    print('False')
