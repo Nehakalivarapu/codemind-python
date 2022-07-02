@@ -21,4 +21,3 @@ for i in range(n+1,10000000):
         if pal(i):
             print(i)
             break
-    
